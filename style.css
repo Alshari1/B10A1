@@ -1,8 +1,7 @@
 * {
     font-family: "Azeret Mono", monospace;
 }
-
-body {
+body{
     max-width: 1290px;
     margin: 0 auto;
 }
@@ -44,7 +43,7 @@ header button, .why-web-container button {
 /* ..........why-web-container............... */
 .why-web-container{
     background-color: #adc8f723;
-    margin: 0 100px;
+    margin: 50px 100px;
     border-radius: 8px;
     padding: 20px 0;
 }
@@ -74,26 +73,44 @@ header button, .why-web-container button {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* margin: 0 100px; */
+    margin: 50px 100px;
     
 }
 .my-inspiration-header{
     padding: 0 100px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+}
+.thumbnail{
+    width: 100%;
+    /* border: 2px solid red; */
+    background-color: #adc8f723;
+    padding: 10px 0;
+    border-radius: 8px;
+    /* margin-top: 50px; */
+}
+.thumbnail iframe{
+    width: 1010px;
+    height: 590px;
+    border-radius: 8px;
 }
 /* ...............my-target-section................... */
 .my-target-container{
     text-align: center;
+    margin: 0 100px;
+}
+.my-target-header{
+    padding: 0 100px;
 }
 .card-container{
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 .card{
     /* border: 2px solid red; */
-    width: 300px;
+    width: 250px;
     height: fit-content;
-    padding: 20px 30px;
+    padding: 20px 50px;
     border-radius: 5px;
     text-align: left;
 }
@@ -108,8 +125,13 @@ header button, .why-web-container button {
 }
 
 /* ................... next-target-section....................... */
+.next-target-container{
+    margin: 0 100px;
+}
 .next-target-header{
     text-align: center;
+    margin: 50px 0;
+    padding: 0 100px;
 }
 .target-card{
     /* border: 2px solid red; */
@@ -122,10 +144,39 @@ header button, .why-web-container button {
     margin-bottom: 20px;
     text-align: left;
 }
+.target-card img{
+    width: 100px;
+}
 
 /* ................ submit-section....................... */
-.submit-container{
+.submit-container {
+    height: 300px;
     background-image: url('./assets/handshake.jpg');
-    background-size: cover;
-    height: 400px
+    background-size: cover; /* Scale the background image to cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 50px;
+}
+.submit-container input{
+    margin-top: 50px;
+    width: 325px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+.submit-container label{
+    padding: 9px;
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: 0 0 2px gray;
+    border-radius: 5px;
+    margin-top: 20px;
 }
