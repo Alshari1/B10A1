@@ -1,5 +1,6 @@
 * {
     font-family: "Azeret Mono", monospace;
+    scroll-behavior:smooth;
 }
 
 body {
@@ -31,6 +32,10 @@ header button,
     height: fit-content;
     text-align: center;
     padding: 20px 300px;
+}
+.header-banner a{
+    text-decoration: none;
+    color: white;
 }
 
 .header-banner button {
@@ -121,6 +126,7 @@ header button,
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    gap: 20px;
 }
 
 .card {
